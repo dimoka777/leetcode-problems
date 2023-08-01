@@ -1,4 +1,6 @@
-# LeetCode Problem Solutions
+# LeetCode Problem Solutions <br/>
+[![LeetCode](https://img.shields.io/badge/LeetCode-dilmurat-aliev-brightgreen)](https://leetcode.com/dilmurat-aliev/)
+
 Welcome to my GitHub repository where I showcase my solutions to various LeetCode problems! <br/><br/>
 
 Here, you'll find a collection of well-organized and efficient code solutions to a wide range of algorithmic challenges. As a passionate problem solver and programming enthusiast, I thoroughly enjoy tackling LeetCode problems to sharpen my skills and expand my knowledge of data structures and algorithms. This repository is a valuable resource for fellow programmers, coding enthusiasts, and anyone looking to improve their problem-solving abilities.<br/>
