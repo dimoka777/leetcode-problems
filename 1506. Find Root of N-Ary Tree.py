@@ -27,11 +27,12 @@ class Node:
 
 class Solution:
     def findRoot(self, tree: List['Node']) -> 'Node':
-        tmp = set()
+        tmp = 0
         for node in tree:
+            tmp += node.val
             for child in node.children:
-                tmp.add(child.val)
+                tmp -= child.val
 
         for node in tree:
-            if node.val not in tmp:
+            if node.val == tmp:
                 return node
