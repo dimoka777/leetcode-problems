@@ -58,9 +58,6 @@ import pandas as pd
 
 
 def find_customers(customers: pd.DataFrame, orders: pd.DataFrame) -> pd.DataFrame:
-    if not customers.empty:
-        ord_lst = orders['customerId'].unique().tolist()
-        customers = customers[customers['id'].apply(lambda user: user not in ord_lst)]
-
-    customers.rename(columns={'name': 'Customers'}, inplace=True)
-    return customers[['Customers']]
+    df = customers[~customers['id'].isin(orders['customerId'])]
+    df.rename(columns={'name': 'Customers'}, inplace=True)
+    return df[['Customers']]
