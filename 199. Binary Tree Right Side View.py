@@ -15,10 +15,9 @@ class Solution:
         ans = []
         while queue:
             lq = len(queue)
+            ans.append(queue[-1].val)
             for i in range(lq):
                 node = queue.popleft()
-                if i == lq - 1:
-                    ans.append(node.val)
                 if node.left:
                     queue.append(node.left)
                 if node.right:
