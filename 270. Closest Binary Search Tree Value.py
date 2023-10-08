@@ -27,3 +27,12 @@ class Solution:
                 stack.append(node.right)
 
         return int(res)
+
+
+class Solution:
+    def closestValue(self, root: Optional[TreeNode], target: float) -> int:
+        ans = root.val
+        while root:
+            ans = min(root.val, ans, key=lambda x: (abs(target - x), x))
+            root = root.left if root.val > target else root.right
+        return ans
